@@ -1,0 +1,76 @@
+SELECT * FROM ZPORDERH
+SELECT * FROM ZPORDERD
+SELECT * FROM ZSORDERD
+SELECT * FROM PORDERQ
+SELECT * FROM ITMMASTER WHERE ITMREF_0 = 'IZT8609-02'
+UPDATE ZPORDERH SET IMPFLG_0 = '1' WHERE POHNUM_0 = 'LBW123123123'
+SELECT * FROM PORDERQ WHERE POHNUM_0 = '0203POH17060003'
+
+--INSERT INTO ZPORDERD(ITMREF_0,
+--					 ITMDES1_0,
+--					 PUU_0,
+--					 QTYPUU_0,
+--					 GROPRI_0,
+--					 REMARK_0,
+--					 POHNUM_0,
+--					 POPLIN_0,
+--					 POHFCY_0,
+--					 BPSNUM_0,
+--					 BPAADD_0,
+--					 DEMDLVDAT_0,
+--					 CREDATTIM_0,
+--					 UPDDATTIM_0,
+--					 AUUID_0,
+--					 CREUSR_0,
+--					 UPDUSR_0
+--					 )
+--			VALUES('IZT8609-02',
+--				   '水速通插座 Φ6,5/M10X1',
+--				   'PCS',
+--				   '100',
+--				   '1',
+--				   '预测订单',
+--				   'LBW123123123',
+--				   '1000',
+--				   '0203',
+--				   'CHN-GD-4033',
+--				   '01',
+--				   '2017/06/30',
+--				   GETDATE(),
+--				   GETDATE(),
+--				   NEWID(),
+--				   '0003',
+--				   '0003')
+
+--INSERT INTO ZPORDERH (POHFCY_0,
+--					  PURTYP_0,
+--					  POHNUM_0,
+--					  CUR_0,
+--					  BPSNUM_0,
+--					  BPAADD_0,
+--					  STOFCY_0,
+--					  PTE_0,
+--					  BUY_0,
+--					  ZREMARK_0,
+--					  CREDATTIM_0,
+--					  UPDDATTIM_0,
+--					  AUUID_0,
+--					  CREUSR_0,
+--					  UPDUSR_0,
+--					  IMPFLG_0) 
+--				VALUES('0203',
+--						'1',
+--						'LBW123123123',
+--						'CNY',
+--						'CHN-GD-4033',
+--						'01',
+--						'0203',
+--						'CN15EOM',
+--						'D114',
+--						' ',
+--						GETDATE(),
+--						GETDATE(),
+--						NEWID(),
+--						'0003',
+--						'0003',
+--						'1')
